@@ -2,7 +2,8 @@ const Discord = require("discord.js");
   const kboosh = new Discord.Client();
     const kbooshtoken = "NTA1NDcwMjMyNjA1NzUzMzQ0.Dw2aNw.FZnhwMbggzCmQGHsQLSqZAE-Jxc"
       kboosh.on('ready', () => {
-        kboosh.user.setGame(`KBOOSH TEST Broadcast`,'https://www.twitch.tv/TEST-Broadcast');
+        kboosh.user.setGame(`Five Store
+`,'https://www.twitch.tv/TEST-Broadcast');
           console.log('Im Ready!');
   
         });
