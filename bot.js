@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
   const kboosh = new Discord.Client();
-    const kbooshtoken = "MzI3NzM2NTMyOTMwOTIwNDUw.DGmnLA.QFbtYXPzTAvZsoFW70wNLyVm3lE"
+    const kbooshtoken = "NTA1NDcwMjMyNjA1NzUzMzQ0.Dw2aNw.FZnhwMbggzCmQGHsQLSqZAE-Jxc"
       kboosh.on('ready', () => {
         kboosh.user.setGame(`KBOOSH TEST Broadcast`,'https://www.twitch.tv/TEST-Broadcast');
           console.log('Im Ready!');
@@ -8,7 +8,7 @@ const Discord = require("discord.js");
         });
 
   kboosh.on('message', message => {
-    if (message.content.split(' ')[0] == '%k')
+    if (message.content.split(' ')[0] == '-bc')
        message.guild.members.forEach( member => {
          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
 
@@ -45,4 +45,4 @@ const Discord = require("discord.js");
                             }
                           }
 });
-kboosh.login(kbooshtoken);
+kboosh.login("NTA1NDcwMjMyNjA1NzUzMzQ0.Dw2aNw.FZnhwMbggzCmQGHsQLSqZAE-Jxc");
